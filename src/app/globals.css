@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+
+@import "tailwindcss";
+
+/* ── TOKENS DE DESIGN ── */
+@theme {
+  /* Cores */
+  --color-bg-dark:      #0B132B;
+  --color-bg-dark-alt:  #0F172A;
+  --color-bg-light:     #F1F5F9;
+  --color-bg-card:      #FFFFFF;
+  --color-brand-blue:   #005AA4;
+  --color-brand-yellow: #F4D23B;
+  --color-text-light:   #F8FAFC;
+  --color-text-muted:   #94A3B8;
+  --color-text-dark:    #0F172A;
+  --color-text-slate:   #475569;
+
+  /* Fontes */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Sombras */
+  --shadow-card:       0 4px 24px rgba(0,0,0,0.25);
+  --shadow-card-hover: 0 8px 40px rgba(0,90,164,0.25);
+  --shadow-btn-yellow: 0 4px 20px rgba(244,210,59,0.30);
+  --shadow-btn-blue:   0 4px 20px rgba(0,90,164,0.40);
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #0B132B;
+  color: #F8FAFC;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── TIPOGRAFIA ── */
+h1, h2, h3, h4 {
+  font-family: 'Syne', sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* ── UTILITÁRIOS ── */
+.gradient-text {
+  background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-yellow {
+  background: linear-gradient(135deg, #F4D23B 0%, #e6c020 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-bg {
+  position: relative;
+}
+.glow-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(0,90,164,0.12) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.border-brand {
+  border: 1px solid rgba(0, 90, 164, 0.35);
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0B132B; }
+::-webkit-scrollbar-thumb {
+  background: #005AA4;
+  border-radius: 3px;
+}
