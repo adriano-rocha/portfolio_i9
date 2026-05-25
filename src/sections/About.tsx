@@ -78,7 +78,7 @@ export default function About() {
               letterSpacing: "0.1em",
             }}
           >
-            Sobre a i9 Studio
+            Sobre a i9 
           </span>
 
           <h2
@@ -245,7 +245,7 @@ export default function About() {
                     Google Lighthouse
                   </p>
                   <p style={{ color: "#475569", fontSize: "11px" }}>
-                    i9studio.com.br — Relatório de Performance
+                    i9criacaodesites.com.br — Relatório de Performance
                   </p>
                 </div>
               </div>

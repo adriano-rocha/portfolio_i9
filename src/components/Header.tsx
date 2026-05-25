@@ -37,12 +37,12 @@ export default function Header() {
       <header
         className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "border-b border-[rgba(0,90,164,0.2)] bg-[#0B132B]/80 shadow-[0_4px_24px_rgba(0,0,0,0.3)] backdrop-blur-md"
+            ? "border-b border-[rgba(0,90,164,0.2)] g-bg-dark/80 shadow-[0_4px_24px_rgba(0,0,0,0.3)] backdrop-blur-md"
             : "bg-transparent"
         }`}
       >
         <div
-          className="relative flex h-[80px] w-full items-center justify-between"
+          className="relative flex h-20 w-full items-center justify-between"
           style={{ padding: "0 48px" }}
         >
           {/* LOGO */}
@@ -72,7 +72,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium tracking-wide text-[#94A3B8] transition-colors duration-200 hover:text-[#f1e311]"
+                className="text-base font-medium tracking-wide text-text-muted transition-colors duration-200 hover:text-[#f1e311]"
               >
                 {link.label}
               </Link>
@@ -82,13 +82,13 @@ export default function Header() {
           {/* BOTÃO — Desktop */}
           <div
             className="hidden md:flex items-center"
-            style={{ marginRight: "32px" }}
+            style={{ marginRight: "0px" }}
           >
             <Link
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 rounded-full bg-[#F4D23B] font-bold text-[#0B132B] shadow-[0_4px_20px_rgba(244,210,59,0.30)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e6c020] hover:shadow-[0_4px_28px_rgba(244,210,59,0.45)]"
+              className="inline-flex items-center gap-1 rounded-full bg-brand-yellow font-bold text-bg-dark shadow-btn-yellow transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e6c020] hover:shadow-[0_4px_28px_rgba(244,210,59,0.45)]"
               style={{ padding: "6px 16px", fontSize: "13px" }}
             >
               Iniciar Projeto
@@ -107,17 +107,17 @@ export default function Header() {
               aria-controls="mobile-menu"
             >
               <span
-                className={`block h-0.5 w-6 bg-[#F8FAFC] transition-all duration-300 ${
+                className={`block h-0.5 w-6 bg-text-light transition-all duration-300 ${
                   menuOpen ? "translate-y-2 rotate-45" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-6 bg-[#F8FAFC] transition-all duration-300 ${
+                className={`block h-0.5 w-6 bg-text-light transition-all duration-300 ${
                   menuOpen ? "opacity-0" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-6 bg-[#F8FAFC] transition-all duration-300 ${
+                className={`block h-0.5 w-6 bg-text-light transition-all duration-300 ${
                   menuOpen ? "-translate-y-2 -rotate-45" : ""
                 }`}
               />

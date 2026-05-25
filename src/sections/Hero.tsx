@@ -4,12 +4,12 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#0B132B]"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-bg-dark"
     >
       {/* GLOW */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/2 h-[600px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#005AA4] opacity-[0.08] blur-[120px]" />
-        <div className="absolute right-1/4 top-1/4 h-[400px] w-[400px] rounded-full bg-[#005AA4] opacity-[0.05] blur-[80px]" />
+        <div className="absolute left-1/2 top-1/2 h-150 w-200 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-blueopacity-[0.08] blur-[120px]" />
+        <div className="absolute right-1/4 top-1/4 h-100 w-100 rounded-full bg-brand-blue opacity-[0.05] blur-[80px]" />
       </div>
 
       {/* GRID */}
@@ -31,7 +31,7 @@ export default function Hero() {
       >
         {/* HEADLINE */}
         <h1
-          className="text-center font-extrabold leading-[1.1] tracking-tight text-[#F8FAFC]"
+          className="text-center font-extrabold leading-[1.1] tracking-tight text-text-light"
           style={{ fontSize: "clamp(32px, 5vw, 72px)" }}
         >
           Desenvolvemos sites de{" "}
@@ -50,11 +50,11 @@ export default function Hero() {
 
         {/* SUBHEADLINE */}
         <p
-          className="max-w-2xl text-center leading-relaxed text-[#94A3B8]"
+          className="max-w-2xl text-center leading-relaxed text-text-muted"
           style={{ fontSize: "clamp(15px, 1.8vw, 20px)" }}
         >
           Código sob medida, design premium e carregamento instantâneo para{" "}
-          <span className="font-medium text-[#F8FAFC]">
+          <span className="font-medium text-text-light">
             destacar o seu negócio no Google.
           </span>
         </p>
@@ -63,8 +63,14 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <a
             href="#projetos"
-            className="inline-flex items-center gap-2 rounded-full bg-[#F4D23B] font-bold text-[#0B132B] shadow-[0_4px_20px_rgba(244,210,59,0.30)] transition-all duration-200 hover:-translate-y-1 hover:bg-[#e6c020] hover:shadow-[0_4px_32px_rgba(244,210,59,0.50)]"
-            style={{ padding: "12px 28px", fontSize: "14px" }}
+            className="inline-flex items-center gap-2 rounded-full font-bold transition-all duration-200 hover:-translate-y-1"
+            style={{
+              padding: "12px 28px",
+              fontSize: "14px",
+              background: "#F4D23B",
+              color: "#0B132B",
+              boxShadow: "0 4px 20px rgba(244,210,59,0.30)",
+            }}
           >
             Ver Projetos
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -82,7 +88,7 @@ export default function Hero() {
             href="https://wa.me/5582996833455?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20i9%20Studio."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-[rgba(0,90,164,0.4)] font-medium text-[#F8FAFC] transition-all duration-200 hover:-translate-y-1 hover:border-[#25D366] hover:bg-[rgba(37,211,102,0.08)] hover:text-[#25D366]"
+            className="whatsapp-hero-btn inline-flex items-center gap-2 rounded-full border border-[rgba(0,90,164,0.4)] font-medium text-text-light transition-all duration-200 hover:-translate-y-1 hover:border-[#25D366] hover:bg-[rgba(37,211,102,0.08)] hover:text-[#25D366]"
             style={{ padding: "12px 28px", fontSize: "14px" }}
           >
             Falar no WhatsApp ↗
@@ -99,7 +105,7 @@ export default function Hero() {
                 <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
                 <span className="h-3 w-3 rounded-full bg-[#28c840]" />
               </div>
-              <div className="flex flex-1 items-center gap-2 rounded-md bg-[#0B132B] px-3 py-1.5">
+              <div className="flex flex-1 items-center gap-2 rounded-md bg-bg-dark px-3 py-1.5">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                   <path
                     d="M5 1a4 4 0 100 8A4 4 0 005 1zM1 5h8M5 1C3.5 3 3 4 3 5s.5 2 2 4M5 1c1.5 2 2 3 2 4s-.5 2-2 4"
@@ -107,15 +113,15 @@ export default function Hero() {
                     strokeWidth="0.8"
                   />
                 </svg>
-                <span className="font-mono text-[10px] text-[#475569]">
-                  i9studio.com.br
+                <span className="font-mono text-[10px] text-text-slate">
+                  i9criacaodesites.com.br
                 </span>
               </div>
             </div>
 
             {/* TELA INTERNA */}
             <div
-              className="relative w-full bg-[#0B132B]"
+              className="relative w-full bg-bg-dark"
               style={{ paddingBottom: "52%" }}
             >
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-8">
@@ -269,9 +275,18 @@ export default function Hero() {
 
       {/* SCROLL INDICATOR */}
       <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 opacity-40">
-        <span className="text-xs uppercase tracking-widest text-[#94A3B8]"></span>
-        <div className="h-12 w-px bg-gradient-to-b from-[#94A3B8] to-transparent" />
+        <span className="text-xs uppercase tracking-widest text-text-muted"></span>
+        <div className="h-12 w-px bg-linear-to-b from-text-muted not-even:to-transparent" />
       </div>
+      <style>{`
+        @media (max-width: 640px) {
+        .whatsapp-hero-btn {
+        background: #25D366 !important;
+        color: #ffffff !important;
+        border-color: #25D366 !important;
+     }
+    }
+`}</style>
     </section>
   );
 }

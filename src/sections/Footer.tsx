@@ -1,4 +1,4 @@
-"use client"; // <-- adiciona no início do arquivo
+"use client"; 
 
 const INSTAGRAM_URL = "https://www.instagram.com/i9criacaodesite/";
 
@@ -24,7 +24,7 @@ export default function Footer() {
           fontWeight: 500,
         }}
       >
-        © {new Date().getFullYear()} i9 Studio. Todos os direitos reservados.
+        © {new Date().getFullYear()} i9 Criação de Sites. Todos os direitos reservados.
       </span>
 
       {/* SEPARADOR */}
