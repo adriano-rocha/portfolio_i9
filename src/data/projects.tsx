@@ -208,4 +208,28 @@ export const projects: Project[] = [
     technologies: ["Plataforma SaaS", "Agendamento Online", "Dashboard"],
     status: "Em desenvolvimento",
   },
+  {
+  id: 17,
+  title: "TaskFlow App",
+  niche: "Tecnologia & Produto",
+  nicheColor: "blue",
+  description:
+    "Landing page para app de produtividade com seções de benefícios, depoimentos e CTA de download. Design moderno focado em conversão.",
+  image: "/projects/taskflow.png",
+  demoUrl: "https://interactive-page-brown.vercel.app/",
+  technologies: ["Landing Page", "Design Premium", "Conversão"],
+  status: "Finalizado" as const,
+},
+{
+  id: 18,
+  title: "Barbearia Kings",
+  niche: "Barbearia & Estilo",
+  nicheColor: "gold",
+  description:
+    "Landing page premium para barbearia masculina com agendamento online via WhatsApp, galeria de cortes, depoimentos e localização integrada. Design moderno focado em atrair novos clientes.",
+  image: "/projects/barber.png",
+  demoUrl: "",
+  technologies: ["Landing Page", "Agendamento Online", "SEO Local"],
+  status: "Em desenvolvimento" as const,
+},
 ];
