@@ -5,17 +5,17 @@ export const metadata: Metadata = {
   title: 'i9 Criação de sites — Sites de Alta Performance',
   description: 'Código sob medida, design premium e carregamento instantâneo para destacar o seu negócio no Google.',
   keywords: ['sites profissionais', 'desenvolvimento web', 'landing page', 'sites para empresas', 'i9 studio'],
-  authors: [{ name: 'i9 Studio' }],
+  authors: [{ name: 'i9 Criação de Sites' }],
   openGraph: {
-    title: 'i9 Studio — Sites de Alta Performance',
+    title: 'i9 Criação de Sites — Sites de Alta Performance',
     description: 'Transformamos visitantes em clientes com sites rápidos, modernos e otimizados para o Google.',
     type: 'website',
     locale: 'pt_BR',
-    siteName: 'i9 Studio',
+    siteName: 'i9 Criação de Sites',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'i9 Studio — Sites de Alta Performance',
+    title: 'i9 Criação de Sites — Sites de Alta Performance',
     description: 'Transformamos visitantes em clientes com sites rápidos, modernos e otimizados para o Google.',
   },
   robots: {
