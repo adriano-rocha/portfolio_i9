@@ -212,7 +212,7 @@ export const projects: Project[] = [
   id: 17,
   title: "TaskFlow App",
   niche: "Tecnologia & Produto",
-  nicheColor: "blue",
+  nicheColor: "green",
   description:
     "Landing page para app de produtividade com seções de benefícios, depoimentos e CTA de download. Design moderno focado em conversão.",
   image: "/projects/taskflow.png",
